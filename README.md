@@ -1,5 +1,5 @@
 [![Kotlin](https://img.shields.io/badge/kotlin-1.2.50-orange.svg)](http://kotlinlang.org/)
-[![Build Status](https://travis-ci.org/lamba92/kotlin-multiplatform-example.svg?branch=master)](https://travis-ci.org/czyzby/kotlin-multiplatform-example)
+[![Build Status](https://travis-ci.org/lamba92/kotlin-multiplatform-example.svg?branch=master)](https://travis-ci.org/lamba92/kotlin-multiplatform-example)
 
 # Kotlin multiplatform project example
 
