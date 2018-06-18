@@ -4,9 +4,7 @@ apply plugin: 'com.moowork.node'
 
 dependencies {
     expectedBy project(':common')
-
     compile group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib-js', version: kotlinVersion
-
     testCompile group: 'org.jetbrains.kotlin', name: 'kotlin-test-js', version: kotlinVersion
 }
 
@@ -20,7 +18,7 @@ compileKotlin2Js {
         sourceMap = true
         sourceMapEmbedSources = 'always'
         moduleKind = 'umd'
-        main = 'com.github.czyzby.example.client.Main'
+        main = 'it.lamba.Main'
     }
 }
 

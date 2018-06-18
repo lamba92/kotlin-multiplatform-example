@@ -3,20 +3,24 @@ buildscript {
         jcenter()
         maven { url 'https://plugins.gradle.org/m2/' }
         mavenCentral()
+        google()
     }
     dependencies {
         classpath group: 'org.jetbrains.kotlin', name: 'kotlin-gradle-plugin', version: kotlinVersion
+        classpath group: 'org.jetbrains.kotlin', name: 'kotlin-android-extensions', version: kotlinVersion
+        classpath group: 'com.android.tools.build', version: '3.1.3', name: 'gradle'
         classpath group: 'com.moowork.gradle', name: 'gradle-node-plugin', version: nodePluginVersion
     }
 }
 
 subprojects {
-    group = 'com.github.czyzby'
+    group = 'it.lamba'
     version = '0.0.1'
 
     repositories {
         mavenLocal()
         jcenter()
+        google()
     }
 }
 
