@@ -1,25 +1,23 @@
-[![Kotlin](https://img.shields.io/badge/kotlin-1.2.21-orange.svg)](http://kotlinlang.org/)
-[![Build Status](https://travis-ci.org/czyzby/kotlin-multiplatform-example.svg?branch=master)](https://travis-ci.org/czyzby/kotlin-multiplatform-example)
+[![Kotlin](https://img.shields.io/badge/kotlin-1.2.50-orange.svg)](http://kotlinlang.org/)
+[![Build Status](https://travis-ci.org/lamba92/kotlin-multiplatform-example.svg?branch=master)](https://travis-ci.org/czyzby/kotlin-multiplatform-example)
 
 # Kotlin multiplatform project example
 
-This repository contains a barebones Kotlin multiplatform Gradle project with 3 modules: `common` (compiled to both JVM
-bytecode and JS), `client` (compiled to JS) and `server` (complied to JVM). Assumes a simple architecture, where the
-`server` module is a backend JVM application, `client` is the usual frontend web application, and the `common` module
-allows to share data structures, validation logic, and so on. It also comes with a working tests setup on both target
+This repository contains a barebones Kotlin multiplatform Gradle project with 4 modules: `common` (compiled to both JVM
+bytecode and JS), `client` (compiled to JS), `server` (complied to JVM) and `android` (Android app module). Assumes a simple architecture, where the
+`server` module is a backend JVM application, `android` is and Android app client, `client` is the usual frontend web application, the `common` module allows to share data structures, validation logic, and so on. It also comes with a working tests setup on both target
 platforms.
 
 Feel free to use it for personal and commercial projects. 
 
-Note that I don't feel comfortable with frontend tools and the `client` module _might_ have some issues. If you notice
-any problems or invalid configurations, please create a GitHub issue.
+Note that I don't feel comfortable with frontend tools and the `client` module _might_ have some issues. If you notice any problem or invalid configurations, please create a GitHub issue.
 
 ## What to do after cloning
 
 * Change group and version in root [`build.gradle`](build.gradle).
 * Update Gradle wrapper version in [`gradle-wrapper.properties`](gradle/wrapper/gradle-wrapper.properties).
 * Update dependencies' versions in [`gradle.properties`](gradle.properties) and [`package.json`](client/package.json).
-* Rename packages (preferably with IntelliJ `Refactor > Rename`), replace `com.github.czyzby` throughout the project.
+* Rename packages (preferably with IntelliJ `Refactor > Rename`), replace `it.lamba` throughout the project.
 * Include your project dependencies in subprojects `build.gradle` files.
 * Write actual code. [Or not.](https://github.com/kelseyhightower/nocode)
 
@@ -57,6 +55,3 @@ will contain your resources, Webpack-generated HTML file and bundled JS files.
 
 See [this commit in kotlinx-serialization branch](https://github.com/czyzby/kotlin-multiplatform-example/commit/2be66023daf2736c1946f5c753221a45dd3ec1d4)
 branch for [kotlinx-serialization](https://github.com/Kotlin/kotlinx.serialization) integration example.
-
-Client project contains examples of
-[asynchronous tests](client/src/test/kotlin/com/github/czyzby/example/client/AsyncTest.kt).
